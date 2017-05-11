@@ -7,6 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import <khenshin/khenshin.h>
+
+// B2A PSE
+#define PSE_KH_AUTOMATON_API_URL @"https://b2a.pse.com.co/api/automata/"
+#define PSE_KH_CEREBRO_URL @"https://b2a.pse.com.co/api/automata/"
+
+#import "PSEHeader.h"
+
+#import "SuccessPaymentViewController.h"
+#import "FailureViewController.h"
+#import "WarningViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +28,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self configureKhenshinWithAutomatonAPIURL:[self safeURLWithString:PSE_KH_AUTOMATON_API_URL]
+                                 cerebroAPIURL:[self safeURLWithString:PSE_KH_CEREBRO_URL]];
+
     return YES;
 }
 
@@ -47,5 +62,102 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void) configureKhenshinWithAutomatonAPIURL:(NSURL*) automatonAPIURL
+                                cerebroAPIURL:(NSURL*) cerebroAPIURL{
+    
+    [KhenshinInterface initWithNavigationBarCenteredLogo:[UIImage imageNamed:@"Bar Logo"]
+                               NavigationBarLeftSideLogo:[[UIImage alloc] init]
+                                         automatonAPIURL:automatonAPIURL
+                                           cerebroAPIURL:cerebroAPIURL
+                                           processHeader:(UIView<ProcessHeader>*)[self processHeader]
+                                          processFailure:(UIViewController<ProcessExit>*)[self failureViewController]
+                                          processSuccess:(UIViewController<ProcessExit>*)[self successViewController]
+                                          processWarning:(UIViewController<ProcessExit>*)[self warningViewController]
+                                  allowCredentialsSaving:NO
+                                         mainButtonStyle:KHMainButtonFatOnForm
+                         hideWebAddressInformationInForm:NO
+                                useBarCenteredLogoInForm:NO
+                                          principalColor:[self principalColor]
+                                    darkerPrincipalColor:[self darkerPrincipalColor]
+                                          secondaryColor:[self secondaryColor]
+                                   navigationBarTextTint:[self navigationBarTextTint]
+                                                    font:nil];
+    
+    [KhenshinInterface setPreferredStatusBarStyle:UIStatusBarStyleLightContent];
+}
+
+- (UIViewController*) successViewController {
+    
+    
+    SuccessPaymentViewController *successViewController = [[SuccessPaymentViewController alloc] initWithNibName:@"Success"
+                                                                                                         bundle:[NSBundle mainBundle]];
+    
+    return successViewController;
+}
+
+- (UIViewController*) warningViewController {
+    
+    WarningViewController *warningViewController = [[WarningViewController alloc] initWithNibName:@"Warning"
+                                                                                           bundle:[NSBundle mainBundle]];
+    
+    return warningViewController;
+}
+
+- (UIViewController*) failureViewController {
+    
+    
+    FailureViewController *failureViewController = [[FailureViewController alloc] initWithNibName:@"Failure"
+                                                                                           bundle:[NSBundle mainBundle]];
+    
+    return failureViewController;
+}
+
+- (UIView<ProcessHeader>*) processHeader {
+    
+    PSEHeader *processHeaderObj =    [[[NSBundle mainBundle] loadNibNamed:@"PSEHeader"
+                                                                    owner:self
+                                                                  options:nil]
+                                      objectAtIndex:0];
+    
+    //    return nil;
+    return processHeaderObj;
+}
+
+- (UIColor*) principalColor {
+    
+    //    return [UIColor colorWithRed:1.0
+    //                           green:0.0
+    //                            blue:16.0/255.0
+    //                           alpha:1.0];
+    return [UIColor lightGrayColor];
+}
+
+- (UIColor*) darkerPrincipalColor {
+    
+    //    return [UIColor colorWithRed:137.0/255.0
+    //                           green:0.0
+    //                            blue:255.0/255.0
+    //                           alpha:1.0];
+    return [UIColor darkGrayColor];
+}
+
+- (UIColor*) secondaryColor {
+    
+    //    return [UIColor colorWithRed:50.0/255.0
+    //                           green:1.0
+    //                            blue:77.0/255.0
+    //                           alpha:1.0];
+    return [UIColor redColor];
+}
+
+- (UIColor*) navigationBarTextTint {
+    
+    return [UIColor whiteColor];
+}
+
+- (NSURL *) safeURLWithString:(NSString *)URLString {
+    
+    return [NSURL URLWithString:[URLString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
+}
 
 @end

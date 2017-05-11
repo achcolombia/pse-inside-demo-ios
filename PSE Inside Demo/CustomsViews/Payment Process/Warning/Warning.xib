@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WarningViewController">
+            <connections>
+                <outlet property="bankImageHeader" destination="aXf-S1-6Pv" id="xOJ-fo-E7z"/>
+                <outlet property="finishButton" destination="Yup-Uj-QvQ" id="Q8W-JC-dyi"/>
+                <outlet property="message" destination="h17-kG-6Ra" id="gV8-pp-iYO"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Puh-z1-CZd"/>
+                <outlet property="viewTitle" destination="GO0-Q8-3HU" id="Yu3-Gl-b0G"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaymentWarning" translatesAutoresizingMaskIntoConstraints="NO" id="xMb-2k-7Nm">
+                    <rect key="frame" x="163" y="134" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="50V-2v-SqS"/>
+                        <constraint firstAttribute="height" constant="50" id="YeP-LK-vgS"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h17-kG-6Ra">
+                    <rect key="frame" x="24" y="216" width="327" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bank" translatesAutoresizingMaskIntoConstraints="NO" id="aXf-S1-6Pv" customClass="UIImageViewAligned">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="P66-7P-uYI"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="alignTop" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOQ-xE-TEe">
+                    <rect key="frame" x="0.0" y="647" width="375" height="20"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="PUi-TL-Zxt"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yup-Uj-QvQ">
+                    <rect key="frame" x="16" y="609" width="343" height="30"/>
+                    <state key="normal" title="Terminar"/>
+                    <connections>
+                        <action selector="finishClicked:" destination="-1" eventType="touchUpInside" id="GPY-HW-cZZ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GO0-Q8-3HU">
+                    <rect key="frame" x="24" y="96" width="327" height="22"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Title">
+                            <attributes>
+                                <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GO0-Q8-3HU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="16" id="1Ju-Cx-1gf"/>
+                <constraint firstItem="xMb-2k-7Nm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1fP-ZR-3j0"/>
+                <constraint firstItem="aXf-S1-6Pv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2dR-9B-uiH"/>
+                <constraint firstItem="Yup-Uj-QvQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="30A-dH-Hkp"/>
+                <constraint firstItem="h17-kG-6Ra" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="16" id="3Xo-D3-ghD"/>
+                <constraint firstItem="hOQ-xE-TEe" firstAttribute="top" secondItem="Yup-Uj-QvQ" secondAttribute="bottom" constant="8" id="68M-fe-goB"/>
+                <constraint firstItem="xMb-2k-7Nm" firstAttribute="top" secondItem="GO0-Q8-3HU" secondAttribute="bottom" constant="16" id="6BA-CN-CfD"/>
+                <constraint firstAttribute="bottom" secondItem="hOQ-xE-TEe" secondAttribute="bottom" id="7Pn-y0-2Zg"/>
+                <constraint firstAttribute="trailingMargin" secondItem="GO0-Q8-3HU" secondAttribute="trailing" constant="16" id="8yP-Cq-Yir"/>
+                <constraint firstAttribute="trailing" secondItem="hOQ-xE-TEe" secondAttribute="trailing" id="CTc-HK-dPM"/>
+                <constraint firstAttribute="trailing" secondItem="aXf-S1-6Pv" secondAttribute="trailing" id="Lmj-l8-9dg"/>
+                <constraint firstItem="GO0-Q8-3HU" firstAttribute="top" secondItem="aXf-S1-6Pv" secondAttribute="bottom" constant="16" id="a82-i8-47Y"/>
+                <constraint firstAttribute="trailing" secondItem="Yup-Uj-QvQ" secondAttribute="trailing" constant="16" id="mEW-Dv-HgS"/>
+                <constraint firstItem="Yup-Uj-QvQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="mfA-w7-1bB"/>
+                <constraint firstItem="aXf-S1-6Pv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oz4-Y8-7Pb"/>
+                <constraint firstItem="h17-kG-6Ra" firstAttribute="top" secondItem="xMb-2k-7Nm" secondAttribute="bottom" constant="32" id="rLL-rf-dKE"/>
+                <constraint firstAttribute="trailingMargin" secondItem="h17-kG-6Ra" secondAttribute="trailing" constant="16" id="tyr-rH-D72"/>
+                <constraint firstItem="hOQ-xE-TEe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zOJ-ki-xEi"/>
+            </constraints>
+            <point key="canvasLocation" x="28.5" y="-458.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Bank" width="64" height="61"/>
+        <image name="PaymentWarning" width="60" height="60"/>
+    </resources>
+</document>

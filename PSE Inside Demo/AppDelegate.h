@@ -12,6 +12,9 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+- (UIColor*) principalColor;
+- (UIColor*) darkerPrincipalColor;
+- (UIColor*) secondaryColor;
 
 @end
 

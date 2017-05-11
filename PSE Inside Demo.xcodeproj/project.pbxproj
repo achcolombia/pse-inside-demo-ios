@@ -13,6 +13,16 @@
 		2CBD45691EC4ABE1003E6A00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD45671EC4ABE1003E6A00 /* Main.storyboard */; };
 		2CBD456B1EC4ABE1003E6A00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD456A1EC4ABE1003E6A00 /* Assets.xcassets */; };
 		2CBD456E1EC4ABE1003E6A00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD456C1EC4ABE1003E6A00 /* LaunchScreen.storyboard */; };
+		2CBD45831EC50560003E6A00 /* Failure.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD45781EC50560003E6A00 /* Failure.xib */; };
+		2CBD45841EC50560003E6A00 /* FailureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD457A1EC50560003E6A00 /* FailureViewController.m */; };
+		2CBD45851EC50560003E6A00 /* Success.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD457C1EC50560003E6A00 /* Success.xib */; };
+		2CBD45861EC50560003E6A00 /* SuccessPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD457E1EC50560003E6A00 /* SuccessPaymentViewController.m */; };
+		2CBD45871EC50560003E6A00 /* Warning.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD45801EC50560003E6A00 /* Warning.xib */; };
+		2CBD45881EC50560003E6A00 /* WarningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD45821EC50560003E6A00 /* WarningViewController.m */; };
+		2CBD458D1EC5058A003E6A00 /* PSEHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD458B1EC5058A003E6A00 /* PSEHeader.m */; };
+		2CBD458E1EC5058A003E6A00 /* PSEHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD458C1EC5058A003E6A00 /* PSEHeader.xib */; };
+		2CBD45921EC507E3003E6A00 /* UIViewController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD45911EC507E3003E6A00 /* UIViewController+Utils.m */; };
+		2CBD45951EC50994003E6A00 /* UIImage+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD45941EC50994003E6A00 /* UIImage+Utils.m */; };
 		36251570358BF3AD04921740 /* Pods_PSE_Inside_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867753DFD858ACDC3F4574D2 /* Pods_PSE_Inside_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +37,22 @@
 		2CBD456A1EC4ABE1003E6A00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CBD456D1EC4ABE1003E6A00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CBD456F1EC4ABE1003E6A00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CBD45781EC50560003E6A00 /* Failure.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Failure.xib; sourceTree = "<group>"; };
+		2CBD45791EC50560003E6A00 /* FailureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailureViewController.h; sourceTree = "<group>"; };
+		2CBD457A1EC50560003E6A00 /* FailureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailureViewController.m; sourceTree = "<group>"; };
+		2CBD457C1EC50560003E6A00 /* Success.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Success.xib; sourceTree = "<group>"; };
+		2CBD457D1EC50560003E6A00 /* SuccessPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuccessPaymentViewController.h; sourceTree = "<group>"; };
+		2CBD457E1EC50560003E6A00 /* SuccessPaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuccessPaymentViewController.m; sourceTree = "<group>"; };
+		2CBD45801EC50560003E6A00 /* Warning.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Warning.xib; sourceTree = "<group>"; };
+		2CBD45811EC50560003E6A00 /* WarningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarningViewController.h; sourceTree = "<group>"; };
+		2CBD45821EC50560003E6A00 /* WarningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarningViewController.m; sourceTree = "<group>"; };
+		2CBD458A1EC5058A003E6A00 /* PSEHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSEHeader.h; sourceTree = "<group>"; };
+		2CBD458B1EC5058A003E6A00 /* PSEHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSEHeader.m; sourceTree = "<group>"; };
+		2CBD458C1EC5058A003E6A00 /* PSEHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PSEHeader.xib; sourceTree = "<group>"; };
+		2CBD45901EC507E3003E6A00 /* UIViewController+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utils.h"; sourceTree = "<group>"; };
+		2CBD45911EC507E3003E6A00 /* UIViewController+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utils.m"; sourceTree = "<group>"; };
+		2CBD45931EC50994003E6A00 /* UIImage+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utils.h"; sourceTree = "<group>"; };
+		2CBD45941EC50994003E6A00 /* UIImage+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utils.m"; sourceTree = "<group>"; };
 		53FCE82422DEFCA9A3A31A94 /* Pods-PSE Inside Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSE Inside Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PSE Inside Demo/Pods-PSE Inside Demo.release.xcconfig"; sourceTree = "<group>"; };
 		867753DFD858ACDC3F4574D2 /* Pods_PSE_Inside_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PSE_Inside_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F02F44B56729A617D06E61 /* Pods-PSE Inside Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSE Inside Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PSE Inside Demo/Pods-PSE Inside Demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,13 +91,13 @@
 		2CBD455D1EC4ABE1003E6A00 /* PSE Inside Demo */ = {
 			isa = PBXGroup;
 			children = (
+				2CBD458F1EC507CC003E6A00 /* Categories */,
+				2CBD45751EC50536003E6A00 /* Customs Views */,
 				2CBD45611EC4ABE1003E6A00 /* AppDelegate.h */,
 				2CBD45621EC4ABE1003E6A00 /* AppDelegate.m */,
 				2CBD45641EC4ABE1003E6A00 /* ViewController.h */,
 				2CBD45651EC4ABE1003E6A00 /* ViewController.m */,
-				2CBD45671EC4ABE1003E6A00 /* Main.storyboard */,
 				2CBD456A1EC4ABE1003E6A00 /* Assets.xcassets */,
-				2CBD456C1EC4ABE1003E6A00 /* LaunchScreen.storyboard */,
 				2CBD456F1EC4ABE1003E6A00 /* Info.plist */,
 				2CBD455E1EC4ABE1003E6A00 /* Supporting Files */,
 			);
@@ -84,6 +110,79 @@
 				2CBD455F1EC4ABE1003E6A00 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CBD45751EC50536003E6A00 /* Customs Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CBD45671EC4ABE1003E6A00 /* Main.storyboard */,
+				2CBD456C1EC4ABE1003E6A00 /* LaunchScreen.storyboard */,
+				2CBD45891EC5058A003E6A00 /* Header */,
+				2CBD45761EC50560003E6A00 /* Payment Process */,
+			);
+			name = "Customs Views";
+			path = CustomsViews;
+			sourceTree = "<group>";
+		};
+		2CBD45761EC50560003E6A00 /* Payment Process */ = {
+			isa = PBXGroup;
+			children = (
+				2CBD45771EC50560003E6A00 /* Failure */,
+				2CBD457B1EC50560003E6A00 /* Success */,
+				2CBD457F1EC50560003E6A00 /* Warning */,
+			);
+			path = "Payment Process";
+			sourceTree = "<group>";
+		};
+		2CBD45771EC50560003E6A00 /* Failure */ = {
+			isa = PBXGroup;
+			children = (
+				2CBD45781EC50560003E6A00 /* Failure.xib */,
+				2CBD45791EC50560003E6A00 /* FailureViewController.h */,
+				2CBD457A1EC50560003E6A00 /* FailureViewController.m */,
+			);
+			path = Failure;
+			sourceTree = "<group>";
+		};
+		2CBD457B1EC50560003E6A00 /* Success */ = {
+			isa = PBXGroup;
+			children = (
+				2CBD457C1EC50560003E6A00 /* Success.xib */,
+				2CBD457D1EC50560003E6A00 /* SuccessPaymentViewController.h */,
+				2CBD457E1EC50560003E6A00 /* SuccessPaymentViewController.m */,
+			);
+			path = Success;
+			sourceTree = "<group>";
+		};
+		2CBD457F1EC50560003E6A00 /* Warning */ = {
+			isa = PBXGroup;
+			children = (
+				2CBD45801EC50560003E6A00 /* Warning.xib */,
+				2CBD45811EC50560003E6A00 /* WarningViewController.h */,
+				2CBD45821EC50560003E6A00 /* WarningViewController.m */,
+			);
+			path = Warning;
+			sourceTree = "<group>";
+		};
+		2CBD45891EC5058A003E6A00 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				2CBD458A1EC5058A003E6A00 /* PSEHeader.h */,
+				2CBD458B1EC5058A003E6A00 /* PSEHeader.m */,
+				2CBD458C1EC5058A003E6A00 /* PSEHeader.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		2CBD458F1EC507CC003E6A00 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2CBD45931EC50994003E6A00 /* UIImage+Utils.h */,
+				2CBD45941EC50994003E6A00 /* UIImage+Utils.m */,
+				2CBD45901EC507E3003E6A00 /* UIViewController+Utils.h */,
+				2CBD45911EC507E3003E6A00 /* UIViewController+Utils.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		71414CD3338CFA543ABC9FE7 /* Frameworks */ = {
@@ -165,9 +264,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CBD45831EC50560003E6A00 /* Failure.xib in Resources */,
+				2CBD45851EC50560003E6A00 /* Success.xib in Resources */,
+				2CBD45871EC50560003E6A00 /* Warning.xib in Resources */,
 				2CBD456E1EC4ABE1003E6A00 /* LaunchScreen.storyboard in Resources */,
 				2CBD456B1EC4ABE1003E6A00 /* Assets.xcassets in Resources */,
 				2CBD45691EC4ABE1003E6A00 /* Main.storyboard in Resources */,
+				2CBD458E1EC5058A003E6A00 /* PSEHeader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,8 +330,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CBD45661EC4ABE1003E6A00 /* ViewController.m in Sources */,
+				2CBD45861EC50560003E6A00 /* SuccessPaymentViewController.m in Sources */,
+				2CBD458D1EC5058A003E6A00 /* PSEHeader.m in Sources */,
+				2CBD45841EC50560003E6A00 /* FailureViewController.m in Sources */,
+				2CBD45921EC507E3003E6A00 /* UIViewController+Utils.m in Sources */,
 				2CBD45631EC4ABE1003E6A00 /* AppDelegate.m in Sources */,
+				2CBD45951EC50994003E6A00 /* UIImage+Utils.m in Sources */,
 				2CBD45601EC4ABE1003E6A00 /* main.m in Sources */,
+				2CBD45881EC50560003E6A00 /* WarningViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +350,7 @@
 				2CBD45681EC4ABE1003E6A00 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		2CBD456C1EC4ABE1003E6A00 /* LaunchScreen.storyboard */ = {
@@ -249,6 +359,7 @@
 				2CBD456D1EC4ABE1003E6A00 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -389,6 +500,7 @@
 				2CBD45741EC4ABE1003E6A00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

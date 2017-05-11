@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccessPaymentViewController">
+            <connections>
+                <outlet property="bankImageHeader" destination="3B5-ek-vsn" id="5d5-s4-Btc"/>
+                <outlet property="finishButton" destination="Ixw-RZ-vm7" id="e9n-Cf-ciu"/>
+                <outlet property="message" destination="Kyt-Aw-H1A" id="J8N-8G-w6M"/>
+                <outlet property="view" destination="euh-re-CQk" id="rH0-0m-lw5"/>
+                <outlet property="viewTitle" destination="qTu-ls-LoK" id="6FM-Zx-ATg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="euh-re-CQk">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaymentSuccess" translatesAutoresizingMaskIntoConstraints="NO" id="Q0m-da-3Ig">
+                    <rect key="frame" x="163" y="134" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="fDH-uz-vid"/>
+                        <constraint firstAttribute="width" constant="50" id="wSI-dp-RgO"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyt-Aw-H1A">
+                    <rect key="frame" x="24" y="216" width="327" height="23"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Message">
+                            <attributes>
+                                <font key="NSFont" size="19" name=".AppleSystemUIFont"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bank" translatesAutoresizingMaskIntoConstraints="NO" id="3B5-ek-vsn" customClass="UIImageViewAligned">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="XlE-ia-FSV"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="alignTop" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGZ-5Y-oFp">
+                    <rect key="frame" x="0.0" y="647" width="375" height="20"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="aS7-I6-flN"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ixw-RZ-vm7">
+                    <rect key="frame" x="16" y="597" width="343" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="bsd-jF-dBo"/>
+                    </constraints>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Terminar">
+                                <attributes>
+                                    <font key="NSFont" metaFont="system" size="15"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="finishClicked:" destination="-1" eventType="touchUpInside" id="xFP-AQ-vzU"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTu-ls-LoK">
+                    <rect key="frame" x="24" y="96" width="327" height="22"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Title">
+                            <attributes>
+                                <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="xGZ-5Y-oFp" secondAttribute="bottom" id="B9g-WC-x6H"/>
+                <constraint firstItem="Q0m-da-3Ig" firstAttribute="centerX" secondItem="euh-re-CQk" secondAttribute="centerX" id="FHM-RI-5uJ"/>
+                <constraint firstItem="qTu-ls-LoK" firstAttribute="top" secondItem="3B5-ek-vsn" secondAttribute="bottom" constant="16" id="HTK-Io-6dc"/>
+                <constraint firstItem="Kyt-Aw-H1A" firstAttribute="leading" secondItem="euh-re-CQk" secondAttribute="leadingMargin" constant="16" id="Lb0-Ht-yU7"/>
+                <constraint firstAttribute="trailing" secondItem="Ixw-RZ-vm7" secondAttribute="trailing" constant="16" id="Mm9-XV-d08"/>
+                <constraint firstItem="xGZ-5Y-oFp" firstAttribute="top" secondItem="Ixw-RZ-vm7" secondAttribute="bottom" constant="8" id="NF7-wQ-8wM"/>
+                <constraint firstAttribute="trailingMargin" secondItem="qTu-ls-LoK" secondAttribute="trailing" constant="16" id="T6M-dR-Nbw"/>
+                <constraint firstItem="xGZ-5Y-oFp" firstAttribute="leading" secondItem="euh-re-CQk" secondAttribute="leading" id="Ufd-QG-VT6"/>
+                <constraint firstAttribute="trailing" secondItem="xGZ-5Y-oFp" secondAttribute="trailing" id="X61-b2-O1s"/>
+                <constraint firstItem="3B5-ek-vsn" firstAttribute="top" secondItem="euh-re-CQk" secondAttribute="top" id="XMY-uY-maZ"/>
+                <constraint firstItem="Ixw-RZ-vm7" firstAttribute="leading" secondItem="euh-re-CQk" secondAttribute="leading" constant="16" id="gDH-Ki-q9L"/>
+                <constraint firstItem="qTu-ls-LoK" firstAttribute="leading" secondItem="euh-re-CQk" secondAttribute="leadingMargin" constant="16" id="gSA-ix-6x2"/>
+                <constraint firstAttribute="trailing" secondItem="3B5-ek-vsn" secondAttribute="trailing" id="m3X-gc-nue"/>
+                <constraint firstItem="Kyt-Aw-H1A" firstAttribute="top" secondItem="Q0m-da-3Ig" secondAttribute="bottom" constant="32" id="n7E-hb-MzR"/>
+                <constraint firstItem="Q0m-da-3Ig" firstAttribute="top" secondItem="qTu-ls-LoK" secondAttribute="bottom" constant="16" id="o5F-Uo-jpM"/>
+                <constraint firstAttribute="trailingMargin" secondItem="Kyt-Aw-H1A" secondAttribute="trailing" constant="16" id="uoJ-Od-GWk"/>
+                <constraint firstItem="Ixw-RZ-vm7" firstAttribute="centerX" secondItem="euh-re-CQk" secondAttribute="centerX" id="zJN-Jn-gLH"/>
+                <constraint firstItem="3B5-ek-vsn" firstAttribute="leading" secondItem="euh-re-CQk" secondAttribute="leading" id="zMH-ru-W3m"/>
+            </constraints>
+            <point key="canvasLocation" x="28.5" y="-522.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Bank" width="64" height="61"/>
+        <image name="PaymentSuccess" width="60" height="60"/>
+    </resources>
+</document>
