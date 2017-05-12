@@ -44,26 +44,26 @@
 - (NSDictionary*) authorizers {
     
     if (!_authorizers) {
-        _authorizers = @{@"BANCO AGRARIO": @"1040",
-                         @"BANCO AV VILLAS": @"1040" ,
-                         @"BANCO BBVA COLOMBIA S.A.": @"1040" ,
-                         @"BANCO CAJA SOCIAL": @"1040",
-                         @"BANCO COLPATRIA": @"1040" ,
-                         @"BANCO COOPERATIVO COOPCENTRAL": @"1040",
-                         @"BANCO CORPBANCA S.A": @"1040" ,
-                         @"BANCO DAVIVIENDA": @"1040" ,
-                         @"BANCO DE BOGOTA": @"1040" ,
-                         @"BANCO DE OCCIDENTE": @"1040",
-                         @"BANCO FALABELLA": @"1040" ,
-                         @"BANCO GNB SUDAMERIS": @"1040" ,
-                         @"BANCO PICHINCHA S.A.": @"1040" ,
-                         @"BANCO POPULAR": @"1040",
-                         @"BANCO PROCREDIT": @"1040" ,
-                         @"BANCOLOMBIA": @"1040" ,
-                         @"BANCOOMEVA S.A.": @"1040" ,
-                         @"CITIBANK": @"1040" ,
-                         @"HELM BANK S.A.": @"1040",
-                         @"NEQUI": @"1040"};
+        _authorizers = @{@"BANCO AGRARIO":@"1040",
+                         @"BANCO AV VILLAS":@"1052",
+                         @"BANCO BBVA COLOMBIA S.A.":@"1013",
+                         @"BANCO CAJA SOCIAL":@"1032",
+                         @"BANCO COLPATRIA":@"1019",
+                         @"BANCO COOPERATIVO COOPCENTRAL ":@"1066",
+                         @"BANCO CORPBANCA S.A":@"1006",
+                         @"BANCO DAVIVIENDA":@"1051",
+                         @"BANCO DE BOGOTA":@"1001",
+                         @"BANCO DE OCCIDENTE":@"1023",
+                         @"BANCO FALABELLA":@"1062",
+                         @"BANCO GNB SUDAMERIS":@"1012",
+                         @"BANCO PICHINCHA S.A.":@"1060",
+                         @"BANCO POPULAR":@"1002",
+                         @"BANCO PROCREDIT":@"1058",
+                         @"BANCOLOMBIA":@"1007",
+                         @"BANCOOMEVA S.A.":@"1061",
+                         @"CITIBANK":@"1009",
+                         @"HELM BANK S.A.":@"1014",
+                         @"NEQUI":@"1507"};
     }
     
     return _authorizers;
@@ -133,7 +133,6 @@
         return;
     }
     
-    
     NSString* userTypeId = [[self userTypes] valueForKey:[[[self userTypes] allKeys] objectAtIndex:[(NSNumber*)[[self userTypePicker] selectedObject][0] integerValue]]];
     NSString* authorizerId = [[self authorizers] valueForKey:[[[self authorizers] allKeys] objectAtIndex:[(NSNumber*)[[self authorizerPicker] selectedObject][0] integerValue]]];
     
@@ -141,12 +140,12 @@
                                          animated:YES
                                        parameters:@{@"cus": [[self formValues] valueForKey:@"cus"],
                                                     @"amount": [[self formValues] valueForKey:@"amount"],
-                                                    @"authorizedId": authorizerId,
+                                                    @"authorizerId": authorizerId,
                                                     @"subject": [[self formValues] valueForKey:@"subject"],
                                                     @"merchant": [[self formValues] valueForKey:@"merchant"],
                                                     @"cancelURL": [[self formValues] valueForKey:@"returnURL"],
                                                     @"paymentId": [[self formValues] valueForKey:@"cus"],
-                                                    @"userType": @"roberto@opazo.cl",
+                                                    @"userType": userTypeId,
                                                     @"returnURL": [[self formValues] valueForKey:@"returnURL"],
                                                     @"payerEmail": [[self formValues] valueForKey:@"payerEmail"]}
                                    userIdentifier:nil

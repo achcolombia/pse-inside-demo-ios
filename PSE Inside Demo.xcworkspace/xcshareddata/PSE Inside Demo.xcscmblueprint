@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A94B34E31CACE5C23E6417853C4859D4519C3378",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6EA62033DA06EAFC9397817174198F03C3A89CA4" : 9223372036854775807,
+    "A94B34E31CACE5C23E6417853C4859D4519C3378" : 9223372036854775807,
+    "CFD504C8C3B7D0508DC57D240BF8EA23E718589B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BC4333E3-6ABD-4CD9-8CC0-3529892378B8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6EA62033DA06EAFC9397817174198F03C3A89CA4" : "khenshin-pod\/",
+    "A94B34E31CACE5C23E6417853C4859D4519C3378" : "pse-inside-demo-ios\/",
+    "CFD504C8C3B7D0508DC57D240BF8EA23E718589B" : "ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PSE Inside Demo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PSE Inside Demo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/khipu\/khenshin-pod.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6EA62033DA06EAFC9397817174198F03C3A89CA4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:achcolombia\/pse-inside-demo-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A94B34E31CACE5C23E6417853C4859D4519C3378"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:khipu\/ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CFD504C8C3B7D0508DC57D240BF8EA23E718589B"
+    }
+  ]
+}
